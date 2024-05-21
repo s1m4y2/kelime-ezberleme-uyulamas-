@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SettingsActivity">
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="230dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/uartek"
+        android:text="SIGN OUT"
+        android:onClick="sign_out"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sifresifirlama"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sifresifirlama" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="230dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="E-mail : "
+        android:textColor="@color/white"
+        android:onClick="Soru_sayi_degistir"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sifresifirlama"
+        app:layout_constraintEnd_toEndOf="@+id/soru_sayi_degistirme"
+        app:layout_constraintStart_toStartOf="@+id/soru_sayi_degistirme" />
+
+    <Button
+        android:id="@+id/sifresifirlama"
+        android:layout_width="230dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/uartek"
+        android:ems="10"
+        android:inputType="text"
+        android:onClick="change_password"
+        android:text="ŞİFRE DEĞİŞTİR"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/signout"
+        app:layout_constraintEnd_toEndOf="@+id/mail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mail" />
+
+    <TextView
+        android:id="@+id/sorusayi"
+        android:layout_width="230dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Soru sayı"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/soru_sayi_giris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <EditText
+        android:id="@+id/soru_sayi_giris"
+        android:layout_width="230dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Soru sayi"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/soru_sayi_degistirme"
+        app:layout_constraintStart_toStartOf="@+id/sorusayi" />
+
+    <Button
+        android:id="@+id/soru_sayi_degistirme"
+        android:layout_width="230dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/uartek"
+        android:onClick="soru_sayi_degistirme_click"
+        android:text="Soru sayisini değiştir"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="@+id/soru_sayi_giris"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/soru_sayi_giris" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

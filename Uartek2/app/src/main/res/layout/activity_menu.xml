@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="231dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:background="@color/uartek"
+        android:onClick="add_word_section"
+        android:text="ADD WORD"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="231dp"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:text="ACHIEVEMENT FILE"
+        android:background="@color/uartek"
+        android:gravity="center"
+        android:onClick="achievement_file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="231dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="144dp"
+        android:textSize="20dp"
+        android:text="SETTİNGS"
+        android:background="@color/uartek"
+        android:gravity="center"
+        android:onClick="settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="231dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/uartek"
+        android:onClick="enter_the_exam_button"
+        android:gravity="center"
+        android:text="ENTER THE EXAM"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="231dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="108dp"
+        android:background="@color/uartek"
+        android:gravity="center"
+        android:onClick="words_button"
+        android:text="WORDS"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
