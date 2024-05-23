@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/recyclerview_row_imageview"
+        android:layout_width="222dp"
+        android:layout_height="171dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/recyclerview_row_english_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:paddingBottom="10dp"
+        android:text="useremail text" />
+
+    <TextView
+        android:id="@+id/recyclerview_row_turkish_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:paddingBottom="10dp"
+        android:text="comment text" />
+    <TextView
+        android:id="@+id/recyclerview_row_sentences_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:paddingBottom="10dp"
+        android:text="comment text" />
+    <TextView
+        android:id="@+id/recyclerview_row_subject_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="comment text" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>
