@@ -26,7 +26,7 @@ Kodları görmeden direkt olarak APK dosyasını telefonunuza indirerek uygulama
 ##Kullanım
 
 
-<img src="resimler/giris.jpeg" alt="giriş ekranı" width="150" height="100">
+<img src="resimler/giris.jpeg" alt="giriş ekranı" width="200" height="300">
 
 
 
