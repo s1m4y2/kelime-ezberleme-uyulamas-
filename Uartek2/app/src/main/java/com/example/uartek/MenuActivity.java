@@ -38,4 +38,10 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void achievement_file(View view){
+        Intent intent = new Intent(MenuActivity.this,AnalysisActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

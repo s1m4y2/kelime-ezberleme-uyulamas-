@@ -36,7 +36,7 @@ public class SignActivity extends AppCompatActivity {
 
     public void created_user_database(){
         String  email = binding.editTextEmail.getText().toString();
-        String  number_words_ask= "10";
+        String  number_words_ask= "0";
         ArrayList<String> Turkish_text_list = new ArrayList<>();
         HashMap<String, Object> postData = new HashMap<>();
         postData.put("number_words_ask",number_words_ask);
@@ -82,4 +82,13 @@ public class SignActivity extends AppCompatActivity {
                         }
                     });
         }
-    }}
+    }
+
+    public void go_back_click(View view){
+        Intent intent = new Intent(SignActivity.this,MainActivity.class);
+        startActivity(intent);
+        finish();
+
+
+    }
+}

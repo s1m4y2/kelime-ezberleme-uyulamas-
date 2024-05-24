@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SettingsActivity">
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="260dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="76dp"
+        android:background="@color/uartek"
+        android:onClick="sign_out"
+        android:text="SIGN OUT"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/change_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/change_password" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="260dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="E-MAIL : "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/change_password"
+        app:layout_constraintEnd_toEndOf="@+id/change_question_number"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/change_question_number" />
+
+    <Button
+        android:id="@+id/change_password"
+        android:layout_width="260dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/uartek"
+        android:ems="10"
+        android:inputType="text"
+        android:onClick="change_password"
+        android:text="CHANGE PASSWORD"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signout"
+        app:layout_constraintEnd_toEndOf="@+id/mail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mail" />
+
+    <TextView
+        android:id="@+id/question_number"
+        android:layout_width="260dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="QUESTION NUMBER"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/question_number_entry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <EditText
+        android:id="@+id/question_number_entry"
+        android:layout_width="260dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="QUESTION NUMBER ENTRY"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/change_question_number"
+        app:layout_constraintStart_toStartOf="@+id/question_number" />
+
+    <Button
+        android:id="@+id/change_question_number"
+        android:layout_width="260dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/uartek"
+        android:onClick="change_question_number"
+        android:text="CHANGE QUESTION NUMBER"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="@+id/question_number_entry"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/question_number_entry" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/gerial"
+        android:onClick="go_back_click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

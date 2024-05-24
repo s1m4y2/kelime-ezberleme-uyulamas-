@@ -1,15 +1,17 @@
 package com.example.uartek;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-import com.example.uartek.R;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+
 import com.example.uartek.adapter.PostAdapter;
+import com.example.uartek.adapter.PostAdapter_2;
 import com.example.uartek.databinding.ActivityWordsBinding;
 import com.example.uartek.model.Post;
 import com.google.firebase.auth.FirebaseAuth;
@@ -18,6 +20,7 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Objects;

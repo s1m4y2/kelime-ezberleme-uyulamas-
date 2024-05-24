@@ -99,7 +99,7 @@ public class SettingsActivity extends AppCompatActivity {
                                 Map<String, Object> data = snapshot.getData();
                                 assert data != null;
                                 number_words_ask = (String) data.get("number_words_ask");
-                                binding.sorusayi.setText(number_words_ask);
+                                binding.questionNumber.setText(number_words_ask);
                             }
                         }
                     }
@@ -126,7 +126,7 @@ public class SettingsActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (DocumentSnapshot document : task.getResult()) {
                                 // Belgeyi güncelle
-                                document.getReference().update("number_words_ask", binding.soruSayiGiris.getText().toString());
+                                document.getReference().update("number_words_ask", binding.questionNumberEntry.getText().toString());
                             }
                         } else {
                             Toast.makeText(SettingsActivity.this, "Error getting documents: " + task.getException(), Toast.LENGTH_LONG).show();
@@ -140,7 +140,7 @@ public class SettingsActivity extends AppCompatActivity {
     public void soru_sayi_degistirme_click(View view) {
         String collectionName = email + "quiz";
         System.out.println(collectionName);
-        int ask_number = Integer.parseInt(binding.soruSayiGiris.getText().toString());
+        int ask_number = Integer.parseInt(binding.questionNumberEntry.getText().toString());
         firebaseFirestore.collection(collectionName)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

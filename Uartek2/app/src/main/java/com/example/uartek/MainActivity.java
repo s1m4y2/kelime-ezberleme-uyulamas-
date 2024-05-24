@@ -50,26 +50,26 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Password and e-mail cannot be empty", Toast.LENGTH_SHORT).show();
         }
         else {
-            auth.signInWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(this, task -> {
-                        if (task.isSuccessful()) {
-                            // Kullanıcı oluşturma başarılı
-                            Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(MainActivity.this,MenuActivity.class);
-                            startActivity(intent);
-                            finish();
-                            // Başka bir eylem yapılabilir, örneğin oturum açma ekranına geri dönme
-                        } else {
-                            // Kullanıcı oluşturma başarısız oldu, hatayı göster
-                            Toast.makeText(this, "login failed: " + task.getException().getMessage(),
-                                    Toast.LENGTH_SHORT).show();
-                        }
-                    });
-        }}
+        auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        // Kullanıcı oluşturma başarılı
+                        Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this,MenuActivity.class);
+                        startActivity(intent);
+                        finish();
+                        // Başka bir eylem yapılabilir, örneğin oturum açma ekranına geri dönme
+                    } else {
+                        // Kullanıcı oluşturma başarısız oldu, hatayı göster
+                        Toast.makeText(this, "login failed: " + task.getException().getMessage(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+                }}
 
     public void forgot_password_button(View view){
         Intent intent = new Intent(MainActivity.this,ResetpasswordActivity.class);
         startActivity(intent);
         finish();
     }
-}
+    }

@@ -73,4 +73,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword" />
 
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="112dp"
+        android:layout_height="63dp"
+        android:background="@drawable/gerial"
+        android:onClick="go_back_click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
