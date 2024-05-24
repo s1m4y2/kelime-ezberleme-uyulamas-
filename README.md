@@ -30,6 +30,22 @@ cd projeadi
 npm install
 # veya
 pip install -r requirements.txt
+```
+
+##kullanım
+nasıl kullanacağını açıkla
+
+##iletişim
+
+E-mails:
+Kadir: soft.eng.abdulkadir@gmail.com
+Ömer: dumanomer3404@gmail.com
+Simay: simaynglu@gmail.com
+Çağrı: enescagritekerek@gmail.com
+
+Projemize yıldız vermeyi unutmayın! ⭐
+
+
 
 
 
