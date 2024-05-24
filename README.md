@@ -26,7 +26,7 @@ Kodları görmeden direkt olarak APK dosyasını telefonunuza indirerek uygulama
 ###kullanım
 
 <div style="text-align:center;">
-  <img src="resimler/giris.jpeg" alt="giriş ekranı" width="200" height="300">
+  <img src="resimler/giris.jpeg" alt="giriş ekranı" style="display: block; margin: 0 auto;" width="200" height="300">
   giriş ekranından mail ve şifre ile giriş yapılabilmektedir.
 </div>
 
