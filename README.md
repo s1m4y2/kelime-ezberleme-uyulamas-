@@ -26,7 +26,7 @@ Kodları görmeden direkt olarak APK dosyasını telefonunuza indirerek uygulama
 ##Kullanım
 
 
-![Açıklayıcı Metin](resimler\giris.jpeg")
+![giriş](resimler\giris.jpeg)
 
 
 
