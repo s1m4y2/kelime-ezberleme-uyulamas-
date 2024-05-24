@@ -136,8 +136,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
 
-
-    public void soru_sayi_degistirme_click(View view) {
+    public void change_question_number(View view) {
         String collectionName = email + "quiz";
         System.out.println(collectionName);
         int ask_number = Integer.parseInt(binding.questionNumberEntry.getText().toString());

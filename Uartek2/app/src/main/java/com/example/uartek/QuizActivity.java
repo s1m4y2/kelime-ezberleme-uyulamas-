@@ -116,7 +116,8 @@ public class QuizActivity extends AppCompatActivity {
             attemptCounter++;
         }
         if (!wordFound) {
-            showToast("Uygun kelime bulunamadı soru sayısını değiştirin");
+            showToast("No suitable word found, you are directed to the main menu, add a new word");
+            goBackToMenu();
         }
     }
 
@@ -135,7 +136,7 @@ public class QuizActivity extends AppCompatActivity {
         setOptions(turkishText);
 
         binding.textView7.setText(trueQuestion + " True/" + askNumberCounter + " question");
-        binding.textView.setText((askNumberCounter +1) +".  Soru");
+        binding.textView.setText((askNumberCounter + 1) + ".  Soru");
         askNumberCounter++;
         if (askNumberCounter > askNumber) {
             finishQuiz();
@@ -202,9 +203,20 @@ public class QuizActivity extends AppCompatActivity {
             currentSnapshot.getReference().update("date_of_correct_guesses", FieldValue.serverTimestamp());
             currentSnapshot.getReference().update("number_of_correct_guesses", String.valueOf(Integer.parseInt(numberOfCorrectGuessesUpdate) + 1));
         } else {
-            binding.textView2.setText("FALSE");
+            showToast("Yanlış cevap! Doğru cevap: " + getCorrectAnswer());
         }
     }
+
+    private String getCorrectAnswer() {
+        String correctAnswer = "";
+        if (examTrueOption == 1) {
+            correctAnswer = binding.option1RadioButton.getText().toString();
+        } else if (examTrueOption == 2) {
+            correctAnswer = binding.option2RadioButton.getText().toString();
+        }
+        return correctAnswer;
+    }
+
 
     private int controlOption() {
         if (examTrueOption == 1 && binding.option1RadioButton.isChecked()) {
@@ -217,15 +229,18 @@ public class QuizActivity extends AppCompatActivity {
 
     private void showToast(String message) {
         Toast.makeText(QuizActivity.this, message, Toast.LENGTH_LONG).show();
-
     }
 
     private void finishQuiz() {
         Intent intent = new Intent(QuizActivity.this, ResultActivity.class);
         intent.putExtra("correctAnswers", trueQuestion);
-        intent.putExtra("totalQuestions", askNumberCounter-1);
+        intent.putExtra("totalQuestions", askNumberCounter - 1);
         startActivity(intent);
         finish();
     }
 
+    private void goBackToMenu() {
+        startActivity(new Intent(QuizActivity.this, MenuActivity.class));
+        finish();
+    }
 }

@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Uartek</string>
+    <string name="app_name">UARTEK</string>
+    <string-array name="GenderList">
+        <item>Animals</item>
+        <item>Objects</item>
+        <item>Food and Drinks</item>
+        <item>Nature</item>
+        <item>Colors</item>
+        <item>People</item>
+        <item>Time</item>
+        <item>Places</item>
+        <item>Emotions</item>
+        <item>Family </item>
+        <item>Members</item>
+        <item>Sports</item>
+        <item>Vehicles</item>
+        <item>Clothing</item>
+        <item>Technology</item>
+        <item>Verbs</item>
+    </string-array>
 </resources>
